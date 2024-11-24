@@ -1,0 +1,70 @@
+* { margin: 0 ; padding: 0; box-sizing: border-box;}
+body { background-color: #181a20; font-family: arial; }
+main { max-width: 900px; margin: 0 auto ; padding: 24px ; }
+nav { display: flex ; justify-content: space-between; align-items: center; }
+#rightMenu { display: flex ; gap: 15px ;  align-items: center; }
+#logo { width: 120px; }
+.btn {
+    display: inline-block ;
+    line-height: 32px ;
+    padding-left: 12px; padding-right: 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+}
+.bgGray { background-color: #2b3139; color: #eaecef ; }
+.btn:hover {  opacity: 0.8 ; }
+.bgOrange { background-color: #FCDC35 ; color: #202630 ; }
+h1 { font-size: 64px;  margin-bottom: 20px; color: #FFF ; }
+.counter { color: #FCDC35 ;}
+section { padding: 2rem 24px ; }
+.form {  display: flex ;   gap: 15px; }
+.form input {
+    flex:1 ;
+    border: 1px solid #666 ; border-radius: 8px;
+    background-color: transparent ; color: #999 ;
+    font-size: 16px;
+    padding: 0 20px ;
+    letter-spacing: 2px;
+}
+.btnLarge { font-size: 16px;  padding: 8px 60px ;  border-radius: 8px; }
+section.list { background-color:  #1e2329 ; border-radius: 20px; color: white ; }
+section.list header {
+  display: flex ; justify-content: space-between;
+  margin-bottom: 25px ;
+  color: #888 ;
+}
+.left { display: flex ;  gap: 20px;  font-weight: bold; }
+.left div:first-of-type { color: white ; }
+#yellowBar {
+    height: 4px ; width: 20px; background-color: #FCDC35;
+    margin-left: 20px; margin-top: 6px ;
+}
+.right { font-size: 14px; }
+.coin img { width: 28px; }
+.coin { display: flex ; align-items: center; gap: 8px; margin-bottom: 20px; }
+.name { font-weight: bold; flex: 0 0 200px;}
+.name span { font-weight: normal; color: #888; font-size: 12px;}
+.price { flex: 1; text-align: right; }
+.red { flex: 1 ; text-align: right; color: #f45;}
+.chat { 
+    position: fixed ; bottom: 20px; right: 20px ;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #FCDC35 ;
+    cursor: pointer ;
+    display: flex ;  align-items: center;
+    transition: all  0.5s ease;
+    width: 48px; height: 48px; overflow: hidden ;
+}
+.chat:hover { width: 120px ; }
+.chat span { margin-left: 12px; }
+/* MOBILE DISPLAY */
+@media (max-width: 600px) {
+    #rightMenu a { display: none;}
+    section h1 { font-size: 32px; text-align: center;}
+    .userTrust { display: flex ; gap: 10px ; justify-content: center;}
+    .form input { display: none;}
+    .form { justify-content: center;}
+}
